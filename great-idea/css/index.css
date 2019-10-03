@@ -162,22 +162,21 @@ h5 {
 
 .container {
 	width: 1000px;
-	border: 1px solid black;
 	margin: 0 auto;
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
-	/*margin: auto;
-    width: 876px;*/
+	margin-top: 20px;
+	/* margin: auto; */
+
 }
 
 nav a {
 	text-decoration: none;
 	color: grey;
-	padding: 25px;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 
@@ -224,7 +223,7 @@ p {
 
 .top-content {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin: 20px 0 20px 0;
 }
 
@@ -239,7 +238,7 @@ p {
 
 .bottom-content {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin: 20px 0 20px 0;
 }
 
@@ -275,8 +274,8 @@ footer {
 
 .serHeader p {
 	margin-bottom: 20px;
-	border: 1px solid red;
-	justify-items: center;
+	text-align: justify;
+	font-size: 16px;
 }
 
 .digDsgn,

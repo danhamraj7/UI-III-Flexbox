@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,25 +91,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -49,18 +136,222 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 1000px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	/*margin: auto;
+    width: 876px;*/
+}
+
+nav a {
+	text-decoration: none;
+	color: grey;
+	padding: 25px;
+	font-size: 16px;
+}
+
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 40px 0 50px 80px;
+
+	/*padding: 50px;*/
+	/*line-height: 0.75;
+    margin: 50px 0px 50px 100px;
+    width: 876px;*/
+}
+
+/*.topImg{
+    padding-left:  140px;
+}
+*/
+
+header .title {
+	font-size: 68px;
+	margin-top: 40px
+}
+
+header .title button {
+	border: 1px solid black;
+	margin-top: 0px;
+	padding: 6px 40px;
+	background: #FFF;
+}
+
+header img {
+	display: flex;
+	width: 40%
+}
+
+p {
+	font-size: 16px;
+	justify-content: center;
+
+}
+
+
+.top-content {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px 0 20px 0;
+}
+
+.features,
+.about {
+	width: 49%;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+.bottom-content {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px 0 20px 0;
+}
+
+.products,
+.services,
+.vision {
+	width: 30%;
+}
+
+.contact {
+	margin: 15px 0 15px 0;
+}
+
+address {
+	margin-left: 5px;
+}
+
+footer {
+	text-align: center;
+	margin: 50px 0 10px 0;
+}
+
+/********Services page********************************************************************************/
+.serHeader {
+	display: flex;
+	flex-direction: column;
+}
+
+.services-header-img {
+	width: 100%;
+	margin: 20px 0 20px 0;
+}
+
+.serHeader p {
+	margin-bottom: 20px;
+	border: 1px solid red;
+	justify-items: center;
+}
+
+.digDsgn,
+.ux,
+.digMar,
+.webDev,
+.iosDev,
+.andDev {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	width: 48%;
+	height: 230px;
+	background: #f2f2f2;
+	margin-bottom: 20px;
+
+}
+
+.digDsgn p,
+.ux p,
+.digMar p,
+.webDev p,
+.iosDev p,
+.andDev p {
+	font-size: 16px;
+	padding: 15px;
+	/* line-height: 1rem; */
+}
+
+.learnBtn {
+	width: 150px;
+	height: 25px;
+	margin-left: 25px;
+	margin-top: 30px;
+	background: #FFF;
+}
+
+.digDsgn h2,
+.ux h2,
+.digMar h2,
+.webDev h2,
+.iosDev h2,
+.andDev H2 {
+	margin: 15px;
+}
+
+.topSect {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-evenly;
+}
+
+.botomSect {
+	display: flex;
+	justify-content: space-around;
+}
+
+.someFacts {
+	width: 48%;
+	height: 220px;
+	margin-top: 20px;
+}
+
+.services-info-img {
+	width: 48%;
+	height: 220px;
+	margin-top: 20px;
+}
+
+.someFacts ul {
+	list-style-type: square;
+	margin: 20px 0 0 20px
+}
+
+.someFacts li {
+	margin-bottom: 5px;
+
+}

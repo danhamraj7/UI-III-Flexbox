@@ -185,17 +185,7 @@ header {
 	flex-direction: row;
 	justify-content: space-around;
 	margin: 40px 0 50px 80px;
-
-	/*padding: 50px;*/
-	/*line-height: 0.75;
-    margin: 50px 0px 50px 100px;
-    width: 876px;*/
 }
-
-/*.topImg{
-    padding-left:  140px;
-}
-*/
 
 header .title {
 	font-size: 68px;
